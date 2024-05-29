@@ -1,0 +1,27 @@
+icon:
+  文件夹: icon
+  # 上面是文件夹，也就是再./icon下面  
+  faAward: fa-award.svg
+  faBuildingColumns: fa-building-columns.svg
+  faCode: fa-code.svg
+  faEnvelope: fa-envelope.svg
+  faGithub: fa-github.svg
+  faGraduationCap: fa-graduation-cap.svg
+  faLinux: fa-linux.svg
+  faPhone: fa-phone.svg
+  faWindows: fa-windows.svg
+  faWrench: fa-wrench.svg
+  python: PYTHON.svg
+  biaoqian: biaoqian.svg
+  haiyang: 海洋水质监测.svg
+
+img:
+
+主题:
+  颜色: 修改请ctrl+F全局修改
+
+成员: ["2021251124古翱翔","2021251103梁明珠","2021251101谭钦月"]
+成员1: ["2021251107李宜兰","2021251101姜子轩"]
+
+# 颜色参考 鸽子蓝：#1c2938 品蓝：rgb(46, 49, 124)
+# 需要把icon的颜色手动修改

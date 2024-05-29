@@ -1,0 +1,12 @@
+# General
+**/*.pdf
+**/*.mp3
+
+# Node
+node_modules
+tools/test-helper/dist
+package-lock.json
+
+# Nix
+/result
+.direnv/

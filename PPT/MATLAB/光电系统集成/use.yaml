@@ -1,0 +1,60 @@
+# 简历使用的yaml文件 
+
+# 请填写你的个人信息
+姓名: 古翱翔
+学校: 哈尔滨工程大学
+电话: "17333984102"
+专业: 光电信息科学与工程
+邮箱: 2194521087@hrbeu.com
+证件照: "./测试证件照.jpg"
+# 尺寸在里面修改（一般不用改） 
+
+
+# 成绩设置（不展示GPA就设置为-1）
+均分: 89.89
+专业排名: 5
+专业人数: 118
+GPA: -1
+百分比保留小数位: 2 # 保留两位小数,比如5.28%
+# 电磁场和电磁波 ->
+展示科目: [线代,工数,概率论,离散数学,电磁场]
+展示成绩: [99,93,98,97,91]
+
+英语科目: [四级,六级,雅思]
+英语成绩: [540 ,415 ,6.5]
+
+# 展示的成绩:
+#   科目: [复变函数,概率论]
+#   成绩: [99,98]
+# 英语展示:
+#   四级: 540
+#   六级: 
+#   雅思:
+
+icon:
+  文件夹: icon
+  # 上面是文件夹，也就是再./icon下面  
+  faAward: fa-award.svg
+  faBuildingColumns: fa-building-columns.svg
+  faCode: fa-code.svg
+  faEnvelope: fa-envelope.svg
+  faGithub: fa-github.svg
+  faGraduationCap: fa-graduation-cap.svg
+  faLinux: fa-linux.svg
+  faPhone: fa-phone.svg
+  faWindows: fa-windows.svg
+  faWrench: fa-wrench.svg
+  python: PYTHON.svg
+  biaoqian: biaoqian.svg
+  haiyang: 海洋水质监测.svg
+
+img:
+
+主题:
+  颜色: 修改请ctrl+F全局修改
+
+成员: ["2021251124古翱翔","2021251103梁明珠","2021251101谭钦月"]
+成员1: ["2021251107李宜兰","2021251101姜子轩"]
+
+# 颜色参考 鸽子蓝：#1c2938 品蓝：rgb(46, 49, 124)
+# 需要把icon的颜色手动修改

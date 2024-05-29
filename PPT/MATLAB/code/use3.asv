@@ -1,0 +1,83 @@
+% 光纤参数
+n1 = 1.4682;   % 纤芯折射率
+n2 = 1.0000;   % 包层折射率
+a = 2.6250e-6;  % 纤芯半径
+w = 2.0000e-6;  % 包层半径
+
+% 光栅参数
+Lambda = 527.87e-9;   % 光栅周期
+L = 1.0000e-3;     % 光栅长度
+Delta_n = 2e-4;     % 折射率调制强度
+
+% 波长范围
+lambda_min = 1.2000e-6;
+lambda_max = 1.6000e-6;
+num_lambda = 1000;
+lambda = linspace(lambda_min, lambda_max, num_lambda);
+
+% 计算光纤模式波长和波数
+[beta1, beta2] = calc_mode_propagation_constants(n1, n2, a, w, lambda);
+
+% 计算光栅传输矩阵
+T = calc_grating_transfer_matrix(Lambda, Delta_n, beta1, beta2, L);
+
+% 计算反射谱和透射谱
+R = abs(T(2, 1)).^2;
+T = abs(T(1, 1)).^2;
+
+% 计算时延特性
+group_delay = calc_group_delay(beta1, beta2, L);
+
+% 绘制图谱
+plot(lambda * 1e9, R, 'r-', lambda * 1e9, T, 'b-');
+xlabel('Wavelength (nm)');
+ylabel('Power');
+title('Fiber Grating Reflection and Transmission Spectra');
+
+plot(lambda * 1e9, group_delay, 'g-');
+xlabel('Wavelength (nm)');
+ylabel('Group Delay (ps)');
+title('Fiber Grating Group Delay');
+
+
+function [beta1, beta2] = calc_mode_propagation_constants(n1, n2, a, w, lambda)
+
+% 波数
+k0 = 2 * pi / lambda;
+
+% 特征方程
+A = besselj(1, k0 * a * n1);
+B = besselj(1, k0 * w * n2);
+C = besselj(0, k0 * w * n2);
+
+% 解特征方程
+[v, ~] = eig([A^2 - B^2, A * C; A * C, B^2]);
+
+% 取实部
+beta1 = k0 * n1 * sqrt(v(1));
+beta2 = k0 * n2 * sqrt(v(2));
+
+end
+
+function T = calc_grating_transfer_matrix(Lambda, Delta_n, beta1, beta2, L)
+
+% 分段长度
+dz = Lambda / 100;
+
+% 初始化传输矩阵
+M = eye(2);
+
+% 循环计算分段传输矩阵
+for z = 0:dz:L
+    % 计算分段传输矩阵
+    T_dz = [ cos(beta1 * dz + pi * Delta_n / Lambda) - (i / k0) sin(beta1 * dz + pi * Delta_n / Lambda) ; ...
+             (i / k0) sin(beta1 * dz + pi * Delta_n / Lambda) cos(beta1 * dz + pi * Delta_n / Lambda) ];
+    
+    % 更新传输矩阵
+    M = M * T_dz;
+end
+
+% 最终传输矩阵
+T = M;
+
+end
