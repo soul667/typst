@@ -113,9 +113,9 @@
     ]
  align(right)[
 
-        #v(-8em)
+        #v(-10.1em)
         // h(8em)
-        #image("img/证件照.jpg", width: 50pt)
+        #image("img/证件照.jpg", width: 65pt)
     ]
 
 
@@ -163,7 +163,53 @@
 
 #let cv获奖(info, isbreakable: true) = {
     if info.work != none {block[
-        == #text(font:"Source Han Serif")[获奖/专利情况]
+        == #text(font:"Source Han Serif")[竞赛获奖/专利情况]
+
+        #for w in info.竞赛专利 {
+            // block(width: 100%, breakable: isbreakable)[
+            //     // line 1: company and location
+            //     #if w.url != none [
+            //         *#link(w.url)[#w.organization]* #h(1fr) *#w.location* \
+            //     ] else [
+            //         *#w.organization* #h(1fr) *#w.location* \
+            //     ]
+            // ]
+            // create a block layout for each work entry
+            let index = 0
+            let tiaozheng=100%
+            for p in w.positions {
+                if index != 0 {v(0.6em)}
+                // if p.tiaozheng!=none{
+                //     tiaozheng=p.tiaozheng
+                // }
+                block(width: 100%, breakable: isbreakable, above: 0.6em)[
+                    // parse ISO date strings into datetime objects
+                    #let start = utils.strpdate(p.startDate)
+                    #let end = utils.strpdate(p.endDate)
+                    // line 2: position and date range
+                    // #text(style: "italic")[#p.position] #h(1fr)
+                    // font:"FangSong"
+                    // #text(font: "Source Han Serif")
+
+                    // #p.
+                     #text(style: "italic",font: ("Times New Roman","Source Han Serif"))[*#p.position*] #h(90fr) #h(-2000em) *#p.highlights* #h(0.1fr)
+                    // #footnote([三大机器人赛事之一])
+                    #start #sym.dash.en #end \
+                    #v(-0.3em)
+                    // highlights or description
+                    // #for hi in p.highlights [
+                    //     - #eval(hi, mode: "markup")
+                    // ]
+                ]
+                index = index + 1
+            }
+        }
+    ]}
+}
+
+#let cv获奖1(info, isbreakable: true) = {
+    if info.work != none {block[
+        == #text(font:"Source Han Serif")[获得奖励]
 
         #for w in info.获奖 {
             // block(width: 100%, breakable: isbreakable)[
@@ -279,7 +325,7 @@
 #let cvprojects(info, isbreakable: true) = {
     if info.projects != none {block[
         #v(10em)
-        == #text(font:"Source Han Serif")[项目经历]
+        == #text(font:"Source Han Serif")[项目经历(🔵为重点项目)]
         #for project in info.projects {
             // parse ISO date strings into datetime objects
             v(0.3em)
