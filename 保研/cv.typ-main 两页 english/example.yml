@@ -1,0 +1,273 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/cv.typ/main/cv.typ.schema.json
+
+personal:
+  name: Gu Aoxiang
+  email: 17333984102@163.com
+  phone: (+86) 17333984102
+  location:
+    city: Harbin Engineering University
+  profiles:
+    - network: GitHub
+      username: soul667
+      url: https://github.com/soul667
+work:
+  - organization: Harbin Engineering University
+    url: https://example.com
+    location: Harbin
+    positions:
+      - position: Deputy Director of Publicity Department of Student Union, Executive Member of Cycling Association
+        startDate: 2021-10-01
+        endDate: 2022-10-01
+        highlights:
+          - Organized and planned multiple events; managed the public WeChat account, wrote and formatted articles; designed posters, banners, and T-shirts
+
+      - position: Member of the Vision Team of the School RoboMaster Robotics Team
+        startDate: 2021-10-01
+        endDate: 2022-09-01
+        highlights:
+          - Participated in the development of an automatic targeting system
+
+      - position: Deputy Captain of the School RoboMaster Robotics Team
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights:
+          - Led the development and maintenance of the energy mechanism recognition and tracking system, and managed the embedded part of the physical energy mechanism
+          - Led the development and maintenance of the automatic targeting system, refactored code, and optimized workflows
+          - Responsible for the navigation algorithm and instrument recognition part of the Challenge Cup wheel-legged robot project
+
+      - position: Captain of the School RoboMaster Robotics Team
+        startDate: 2023-09-01
+        endDate: present
+        highlights:
+          - Managed a team of over 50 members, coordinated resources, resolved conflicts, established project directions, and controlled risks
+          - Provided technical and competition-related support as a consultant
+#  参赛队伍需要展示他们在机械设计、嵌入式系统、计算机视觉以及团队合作方面的综合能力。
+    # 相比于其他比赛，如电赛，数模等，他的比赛周期更长（一整年），消耗精力多。
+    # 同时，比赛不同于上述竞赛的三人组队，团队一般为三四十人通力合作，一起完成若干项目的技术攻关，
+    
+竞赛专利:
+  - organization: Harbin Engineering University
+    url: https://example.com
+    location: Harbin
+    比赛简介: RoboMaster is a global robotics competition initiated by DJI Innovations. Teams are required to design, build, and operate various types of robots to complete tasks. Compared to competitions like the National Electronics Design Contest and Mathematical Contest in Modeling, RoboMaster has a longer competition cycle, usually lasting a whole year, and requires higher energy investment from participants. Unlike the traditional three-person team model, RoboMaster teams are large, usually consisting of 30 to 40 members, working together to tackle technical challenges. This competition cultivates perseverance and teamwork skills that are difficult to acquire in other contests. Participants not only improve their technical skills but also develop strong perseverance and outstanding teamwork abilities.
+    positions:
+      - position: The 18th Challenge Cup of Academic and Technological Competition
+        startDate: 2023-12-01
+        endDate: 2023-12-01
+        highlights: National Special Prize
+        adjustment: 0
+      - position: National College Student Robotics Competition RoboMaster 2023  · National
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights: National Second Prize
+        adjustment: 0.1
+
+      - position: National College Student Robotics Competition RoboMaster 2023  · Regional
+      # - position:   Competition
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights: Runner-up
+        adjustment: 0
+
+      - position: National College Student Robotics Competition RoboMaster 2023  · Alliance
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights: Regional Second Prize
+        adjustment: 0
+
+      - position: Wheel-Legged Robot Leg Structure (Patent)
+        startDate: 2022-12-01
+        endDate: 2023-12-01
+        highlights: First Author
+        adjustment: 0
+
+获奖:
+  - organization: Harbin Engineering University
+    url: https://example.com
+    location: Harbin
+    positions:
+      - position: Dean’s Special Scholarship of the School of Physics and Optoelectronic Engineering (Open to Undergraduates, Masters, and PhD students; Only Undergraduate Winner)
+        startDate: 2023-12-01
+        endDate: 2023-12-01
+        highlights:
+        adjustment: 0
+        
+      - position: May Fourth Commendation for Advanced Individual in Student Innovation and Entrepreneurship 
+        startDate: 2024-05-01
+        endDate: 2024-05-01
+        highlights:
+        adjustment: 0
+
+
+      
+education:
+  - institution: Harbin Engineering University (Double First-Class, Project 211)
+    url: https://example.com/
+    专业: School of Physics and Optoelectronic Engineering (Optoelectronic Information Science and Engineering)
+    startDate: 2021-09-01
+    endDate: 2025-09-01
+    location: China - Harbin
+    成绩: 88.9
+    排名: 10.0
+    综合排名: 4.0
+    总人数: 126.0
+    英语:
+       CET4: 540
+    主修课程:
+      - Linear Algebra (99)
+      - Probability Theory and Mathematical Statistics (98)
+      - University Physics (93)
+      - Digital Image Processing (95)
+
+projects:
+
+  - name: "🔵Multi-sensor fusion automatic targeting system based on ROS2, OpenCV and Kalman filtering"
+    url: https://example.com/
+    affiliation: (Individual project, RoboMaster)
+    startDate: 2021-12-01
+    endDate: 2023-08-30
+    highlights:
+      - Recognition Algorithm:Develop the armor plate recognition algorithm based on OpenCV, integrate the IMU data, and obtain the real coordinates of the target in the world coordinate system through PnP solving.
+      - Motion state estimation:The position and velocity of the target in the inertial system are estimated by using a uniform Kalman filter.
+      - Simulation Verification:Unity and ROS2 simulation environment is used to release the camera node data to verify the algorithm.
+      # - 【*工作流*】 基于Docker构建开发、部署容器，提高团队协作效率和系统可维护性
+    
+  - name: "🔵Automatic Targeting System for Energy Mechanism Based on OpenCV and Gradient Descent"
+    url: https://example.com/
+    affiliation: Personal Project, RoboMaster
+    startDate: 2021-12-01
+    endDate: 2023-05-30
+    highlights:
+      - Recognition Algorithm:Developed energy mechanism recognition and matching algorithm using OpenCV, obtained the pose of the target in space
+      - Gradient Descent:Used gradient descent algorithm to accurately estimate the sinusoidal function of the rotation speed of the energy mechanism
+    
+  - name: "🔵High-Performance Intelligent Monitoring Wheel-Legged Robot for Nuclear Power Field"
+    url: https://example.com/
+    affiliation: Team of 7, Deputy Captain, Responsible for Algorithms, Challenge Cup
+    startDate: 2022-09-01
+    endDate: 2023-12-30
+    highlights:
+      - Navigation:Implemented fixed-point cruise of the robot based on Livox-Mid360 radar and FAST_LIO algorithm
+      - Instrument Recognition:Used PP-YOLOv2 model and OpenCV to recognize nuclear power instruments
+      - Simulation Verification:Built a simulation environment in Webots to verify the stability of the navigation algorithm in inspection scenarios
+
+  - name: "🔵Energy Mechanism System Based on STM32 and WS2812"
+    url: https://example.com/
+    affiliation: Personal Project, RoboMaster
+    startDate: 2022-09-01
+    endDate: 2023-12-30
+    imgpath: "./img/1.png"
+    highlights:
+      - Hardware:Developed a custom control board based on STM32F103RCT6 for driving WS2812 LEDs and monitoring hits. Implemented speed control on RoboMaster C-type development board
+      - Software:Used HAL library for overall code development, controlled WS2812 LED color and brightness through DMA and PWM serial input, and used PID to achieve sinusoidal speed control
+
+  - name: "FPGA Driving Dot Matrix Display"
+    url: https://example.com/
+    affiliation: Course Design, Personal Project
+    startDate: 2023-09-01
+    endDate: 2023-12-30
+    highlights:
+      - Hardware:Developed a pin conversion board with dual shift registers to drive an 8x8 dot matrix display
+      - Software:Used Verilog to write modules for frequency division, buttons, flow, Bluetooth, etc., simulated waveform with Modelsim, synthesized with Vivado, and debugged on FPGA board
+
+  - name: "Marine Water Quality Monitoring System Based on STM32 and Bluetooth"
+    url: https://example.com/
+    affiliation: Course Design, Personal Project
+    startDate: 2024-01-01
+    endDate: present
+    imgpath: "./img/1.png"
+    highlights:
+      - Hardware:Designed the circuit, integrated the minimal system, Bluetooth, sensors, and battery modules
+      # - 
+  # - name: "海洋水质监测系统"
+  #  url: https://example.com/
+  #  affiliation: (课程设计)
+  #  startDate: 2024-01-01
+  #  endDate: present
+  #  highlights:
+  #    - 【*系统设计与实现*】 使用STM32F103C8T6搭建基于蓝牙的海洋水质监测系统，实现对水质参数（如pH值、溶解氧、浊度等）的实时监测与数据上传。
+  #    - 【*硬件开发*】 利用嘉立创EDA设计并制作了定制主控板，集成最小系统、蓝牙、传感器和电池模块。
+  #    - 【*软件开发*】 实现数据采集、处理和上传功能，并使用Meteor和React搭建APP和网页端，实现水质数据的实时显示、分析。
+
+  # - name: "轮腿机器人腿部结构有限元分析及再设计"
+  #   url: https://example.com/
+  #   affiliation: 负责人
+  #   startDate: 2022-09-01
+  #   endDate: 2023-12-30
+  #   highlights:
+  #     - 【*有限元仿真*】使用SolidWorls和COMSOL对腿部结构在行走、转向、爬坡等多种工况下的受力情况进行了仿真，分析了结构在不同载荷下的应力分布、变形情况以及模态特性。
+  #     - 【*结构优化*】 根据仿真结果，识别出腿部结构的薄弱点和应力集中区域，通过改变结构形状进行了优化设计。
+  
+    #- name: "基于STM32和OpenMV的自动泊车系统"
+  #  url: https://example.com/
+  #  affiliation: (项目负责人，团队3人,电赛)
+  #  startDate: 2022-08-01
+  #  endDate: 2022-08-30
+  #  highlights:
+  #    - 基于Openmv的Micro-Python实现了色块识别，与下位机通信实现巡线 
+
+skills:
+  - category: Embedded Systems [Skilled in embedded hardware and software design and debugging]
+    skills:
+      - JLCPCB EDA
+      - Altium Designer
+      - CubeMX
+      - Keil
+      - Vivado
+      - Modelsim
+
+  - category: Software Development [Extensive experience in image processing and related project development]
+    skills:
+      - OpenCV
+      - CMake
+      - ROS2
+      - Webots
+      - Unity
+      - Meteor
+      
+  - category: Programming Languages [Proficient in multiple programming languages]
+    skills:
+      - C/C++ (Proficient)
+      - Python (Proficient)
+      - MATLAB (Proficient)
+      - LaTeX (Proficient)
+      - Typst (Proficient)
+      - NodeJs, JavaScript, HTML, CSS (Familiar)
+      - C# (Basic)
+      - R (Basic)
+      - Verilog (Basic)
+      # - Node.js
+
+  - category: Tools [Proficient in the use of office, embedded, software development tools, and Linux systems]
+    skills:
+      - Office
+      - Zotero
+      - Adobe Photoshop, InDesign, Acrobat
+      - Docker
+      - Git
+      # - Jupyter Notebook
+      - WSL2
+      - VMware Workstation
+      - Vscode
+      - Clion
+      - SSH
+
+  - category: Others
+    skills:
+      - Excellent teamwork and management skills
+      - Hardworking
+      - Responsible
+      - Highly motivated
+
+
+
+languages:
+
+
+interests:
+  - 图像处理
+  - 深度学习
+  - 导航
+  - 软件开发
+  - 嵌入式
+

@@ -71,17 +71,17 @@ work:
         highlights: 亚军
         tiaozheng: 0
 
-      - position: 第二十二届全国大学生机器人大赛 RoboMaster2023 机甲大师超级对抗赛·联盟赛
-        startDate: 2022-09-01
-        endDate: 2023-09-01
-        highlights: 赛区二等奖
-        tiaozheng: 0
+      # - position: 第二十二届全国大学生机器人大赛 RoboMaster2023 机甲大师超级对抗赛·联盟赛
+      #   startDate: 2022-09-01
+      #   endDate: 2023-09-01
+      #   highlights: 赛区二等奖
+      #   tiaozheng: 0
         
-      - position: 哈尔滨工程大学2022第13届“启航杯”大学生创新创意大赛
-        startDate: 2022-12-01
-        endDate: 2022-12-01
-        highlights: 校二等奖
-        tiaozheng: 0
+      # - position: 哈尔滨工程大学2022第13届“启航杯”大学生创新创意大赛
+      #   startDate: 2022-12-01
+      #   endDate: 2022-12-01
+      #   highlights: 校二等奖
+      #   tiaozheng: 0
 
 
       - position: 一种轮足式机器人腿部结构（专利）
@@ -148,13 +148,13 @@ education:
       - 数字图像处理(95)
 
 projects:
-  - name: "基于STM32和OpenMV的自动泊车系统"
-    url: https://example.com/
-    affiliation: (项目负责人，团队3人,电赛)
-    startDate: 2022-08-01
-    endDate: 2022-08-30
-    highlights:
-      - 基于Openmv的Micro-Python实现了色块识别，与下位机通信实现巡线 
+  #- name: "基于STM32和OpenMV的自动泊车系统"
+  #  url: https://example.com/
+  #  affiliation: (项目负责人，团队3人,电赛)
+  #  startDate: 2022-08-01
+  #  endDate: 2022-08-30
+  #  highlights:
+  #    - 基于Openmv的Micro-Python实现了色块识别，与下位机通信实现巡线 
 
   - name: " 🔵基于ROS2、OpenCV和卡尔曼滤波的多传感器融合自动瞄准系统"
     url: https://example.com/
@@ -168,14 +168,14 @@ projects:
       # - 【*工作流*】 基于Docker构建开发、部署容器，提高团队协作效率和系统可维护性
     
   
-  - name: "🔵基于Opencv和梯度下降的能量机关系统自动瞄准系统"
-    url: https://example.com/
-    affiliation: （个人项目,RoboMaster）
-    startDate: 2021-12-01
-    endDate: 2023-05-30
-    highlights:
-      - 【*识别算法*】 利用Opencv开发能量机关识别算法
-      - 【*梯度下降*】 使用梯度下降算法，准确估计能量机关转动速度的正弦函数。
+  # - name: "🔵基于Opencv和梯度下降的能量机关系统自动瞄准系统"
+  #   url: https://example.com/
+  #   affiliation: （个人项目,RoboMaster）
+  #   startDate: 2021-12-01
+  #   endDate: 2023-05-30
+  #   highlights:
+  #     - 【*识别算法*】 利用Opencv开发能量机关识别算法
+  #     - 【*梯度下降*】 使用梯度下降算法，准确估计能量机关转动速度的正弦函数。
 
   - name: "🔵面向核电领域高性能智能监测轮腿机器人"
     url: https://example.com/
@@ -205,25 +205,25 @@ projects:
   #     - 【*有限元仿真*】使用SolidWorls和COMSOL对腿部结构在行走、转向、爬坡等多种工况下的受力情况进行了仿真，分析了结构在不同载荷下的应力分布、变形情况以及模态特性。
   #     - 【*结构优化*】 根据仿真结果，识别出腿部结构的薄弱点和应力集中区域，通过改变结构形状进行了优化设计。
   
-  - name: "FPGA驱动点阵屏"
-    url: https://example.com/
-    affiliation: (课程设计)
-    startDate: 2023-09-01
-    endDate: 2023-12-30
-    highlights:
-      - 【*硬件*】自制了一块带双移位寄存器7HC595D的引脚转换板，用于将串行信号转为并行信号，驱动LG7088GH点阵屏
-      - 【*软件*】使用Verilog分模块编写了分频，按键，流水，蓝牙等模块，使用Modelsim进行了波形图的仿真，同时使用Vivado进行综合，下载到FPGA板上进行调试
+  # - name: "FPGA驱动点阵屏"
+  #   url: https://example.com/
+  #   affiliation: (课程设计)
+  #   startDate: 2023-09-01
+  #   endDate: 2023-12-30
+  #   highlights:
+  #     - 【*硬件*】自制了一块带双移位寄存器7HC595D的引脚转换板，用于将串行信号转为并行信号，驱动LG7088GH点阵屏
+  #     - 【*软件*】使用Verilog分模块编写了分频，按键，流水，蓝牙等模块，使用Modelsim进行了波形图的仿真，同时使用Vivado进行综合，下载到FPGA板上进行调试
   
-  - name: "海洋水质监测系统"
-    url: https://example.com/
-    affiliation: (课程设计)
-    startDate: 2024-01-01
-    endDate: present
-    highlights:
-      - 【*系统设计与实现*】 使用STM32F103C8T6搭建基于蓝牙的海洋水质监测系统，实现对水质参数（如pH值、溶解氧、浊度等）的实时监测与数据上传。
-      - 【*硬件开发*】 利用嘉立创EDA设计并制作了定制主控板，集成最小系统、蓝牙、传感器和电池模块，优化系统性能和功耗。
-      - 【*软件开发*】 基于FreeRTOS开发多任务调度程序，实现数据采集、处理和上传功能，确保系统稳定运行。
-      - 【*数据可视化*】 使用Meteor和React搭建APP和网页端，实现水质数据的实时显示、历史数据查询和可视化分析，提升用户体验。
+  #- name: "海洋水质监测系统"
+  #  url: https://example.com/
+  #  affiliation: (课程设计)
+  #  startDate: 2024-01-01
+  #  endDate: present
+  #  highlights:
+  #    - 【*系统设计与实现*】 使用STM32F103C8T6搭建基于蓝牙的海洋水质监测系统，实现对水质参数（如pH值、溶解氧、浊度等）的实时监测与数据上传。
+  #    - 【*硬件开发*】 利用嘉立创EDA设计并制作了定制主控板，集成最小系统、蓝牙、传感器和电池模块，优化系统性能和功耗。
+  #    - 【*软件开发*】 实现数据采集、处理和上传功能，确保系统稳定运行。
+  #    - 【*数据可视化*】 使用Meteor和React搭建APP和网页端，实现水质数据的实时显示、历史数据查询和可视化分析，提升用户体验。
 
 
 skills:

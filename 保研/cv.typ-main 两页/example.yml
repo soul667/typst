@@ -1,0 +1,316 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/cv.typ/main/cv.typ.schema.json
+
+personal:
+  name: 古翱翔
+  email: 17333984102@163.com
+  phone: (+86) 17333984102 
+  location:
+    city: 哈尔滨工程大学
+  profiles:
+    - network: GitHub
+      username: soul667
+      url: https://github.com/soul667
+
+work:
+  - organization: 哈尔滨工程大学
+    url: https://example.com
+    location: 哈尔滨
+    positions:
+      # - position: 
+      #   startDate: 2021-12-01
+      #   endDate: 2022-09-01
+      #   highlights:
+      #     - 负责院系公众号的运营，撰写、推送 
+      #     - 院系活动海报、横幅、文化衫制作
+
+      - position: 院学生会宣传部副部长、自行车协会执行委员
+        startDate: 2021-10-01
+        endDate: 2022-10-01
+        highlights:
+          - 组织策划多次活动；公众号的运营，推文撰写、排版；海报、横幅、文化衫的制作
+          
+          
+      - position: RoboMaster 校机器人队视觉组组员
+        startDate: 2021-10-01
+        endDate: 2022-09-01
+        highlights:
+          - 参与自动瞄准系统的开发
+      
+      - position: RoboMaster 校机器人队副队长
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights:
+          -  主导能量机关识别与跟踪系统开发与维护，并负责实体能量机关嵌入式部分。
+          - 主导自动瞄准系统的开发与维护，重构代码，转换工作流
+          - 负责挑战杯轮腿机器人项目导航算法与仪表识别部分。
+          # - 对轮足机器人腿部结构进行了有限元仿真和结构优化
+
+      - position: RoboMaster 校机器人队队长
+        startDate: 2023-09-01
+        endDate: present
+        highlights:
+          - 管理五十余人的团队，统筹整个团队进度，协调资源，调和矛盾。确立项目方向，把控风险。
+          - 作为顾问，为队伍提供技术和比赛相关的支持
+      
+#  参赛队伍需要展示他们在机械设计、嵌入式系统、计算机视觉以及团队合作方面的综合能力。
+    # 相比于其他比赛，如电赛，数模等，他的比赛周期更长（一整年），消耗精力多。
+    # 同时，比赛不同于上述竞赛的三人组队，团队一般为三四十人通力合作，一起完成若干项目的技术攻关，
+    
+竞赛专利:
+  - organization: 哈尔滨工程大学
+    url: https://example.com
+    location: 哈尔滨
+    比赛简介: RoboMaster 是由 DJI 大疆创新发起的一项全球性机器人竞赛，竞赛要求参赛队伍设计、制造并操作多种类型的机器人来完成任务。与电赛、数模等竞赛相比，RoboMaster 赛事周期更长，通常持续一整年，对参赛者精力投入要求更高。不同于三人组队的传统模式，RoboMaster 团队规模庞大，通常由三四十名成员组成，共同攻克各项技术难题。学生在这里可以培养到其他比赛难以培养的毅力和团队协作能力。参赛学生在此过程中不仅能提升技术水平，更能培养出坚韧不拔的毅力和卓越的团队协作能力。
+    positions:
+      - position: 第十八届挑战杯全国大学生课外学术科技作品竞赛（教育部学科竞赛榜第二）
+        startDate: 2023-12-01
+        endDate: 2023-12-01
+        highlights: 全国特等奖
+        tiaozheng: 0
+      - position: 第二十二届全国大学生机器人大赛 RoboMaster2023 机甲大师超级对抗赛·全国赛
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights: 全国二等奖
+        tiaozheng: 0.1
+
+      - position:  第二十二届全国大学生机器人大赛 RoboMaster2023 机甲大师超级对抗赛·区域赛
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights: 亚军
+        tiaozheng: 0
+
+      - position: 第二十二届全国大学生机器人大赛 RoboMaster2023 机甲大师超级对抗赛·联盟赛
+        startDate: 2022-09-01
+        endDate: 2023-09-01
+        highlights: 赛区二等奖
+        tiaozheng: 0
+        
+      # - position: 哈尔滨工程大学2022第13届“启航杯”大学生创新创意大赛
+      #   startDate: 2022-12-01
+      #   endDate: 2022-12-01
+      #   highlights: 校二等奖
+      #   tiaozheng: 0
+
+
+      - position: 一种轮足式机器人腿部结构（专利）
+        startDate: 2022-12-01
+        endDate: 2023-12-01
+        highlights: 一作
+        tiaozheng: 0
+# 2023-2024年度“五四”评比表彰“学生创新创业先进个人（团队）
+      # - position: 物理与光电工程学院院长特别奖学金（本硕博同评、本科生唯一）
+      #   startDate: 2023-12-01
+      #   endDate: 2023-12-01
+      #   highlights: 
+      #   tiaozheng: 0
+        
+      # - position: 2023-2024年度“五四”评比表彰“学生创新创业先进个人
+      #   startDate: 2024-05-01
+      #   endDate: 2024-05-01
+      #   highlights: 
+      #   tiaozheng: 0
+
+获奖:
+  - organization: 哈尔滨工程大学
+    url: https://example.com
+    location: 哈尔滨
+    positions:
+# 2023-2024年度“五四”评比表彰“学生创新创业先进个人（团队）
+      - position: 物理与光电工程学院院长特别奖学金（本硕博同评、本科生唯一）
+        startDate: 2023-12-01
+        endDate: 2023-12-01
+        highlights: 
+        tiaozheng: 0
+        
+      - position: 2023-2024年度“五四”评比表彰“学生创新创业先进个人（全校仅9）
+        startDate: 2024-05-01
+        endDate: 2024-05-01
+        highlights: 
+        tiaozheng: 0
+
+
+      
+
+    
+education:
+  - institution: 哈尔滨工程大学(双一流、211)
+    url: https://example.com/
+    专业: 物理与光电工程学院（光电信息科学与工程专业）
+    # studyType: 物理与光电信息工程
+    startDate: 2021-09-01
+    endDate: 2025-09-01
+    location: 中国 - 哈尔滨
+    成绩: 88.9  
+      # - "10/126"
+    排名: 10.0
+    综合排名: 4.0
+    总人数: 126.0
+    英语: 
+       CET4: 540
+    主修课程:
+      - 线性代数(99)
+      - 概率论与数理统计(98)
+      # - 离散数学(97)
+      - 大学物理(93)
+      # - 电磁场与电磁波(91)
+      # - 电子技术A(87)
+      - 数字图像处理(95)
+      # - 光电系统设计
+
+projects:
+
+  - name: " 🔵基于ROS2、OpenCV和卡尔曼滤波的多传感器融合自动瞄准系统"
+    url: https://example.com/
+    affiliation: （个人项目,RoboMaster）
+    startDate: 2021-12-01
+    endDate: 2023-08-30
+    highlights:
+      - 【*识别算法*】基于OpenCV开发装甲板识别算法，融合IMU数据，通过PnP解算获取目标在世界坐标系下的真实坐标
+      - 【*运动状态估计*】 采用匀速卡尔曼滤波器，估计目标在惯性系下的位置与速度
+      - 【*仿真验证*】 使用Unity联合ROS2仿真环境，发布相机节点数据，验证算法
+      # - 【*工作流*】 基于Docker构建开发、部署容器，提高团队协作效率和系统可维护性
+    
+  
+  - name: "🔵基于Opencv和梯度下降的能量机关系统自动瞄准系统"
+    url: https://example.com/
+    affiliation: （个人项目,RoboMaster）
+    startDate: 2021-12-01
+    endDate: 2023-05-30
+    highlights:
+      - 【*识别算法*】 利用Opencv开发能量机关识别、匹配算法，获取空间中目标位姿
+      - 【*梯度下降*】 使用梯度下降算法，准确估计能量机关转动速度的正弦函数。
+
+  - name: "🔵面向核电领域高性能智能监测轮腿机器人"
+    url: https://example.com/
+    affiliation: （团队7人，副队长，负责算法部分,挑战杯）
+    startDate: 2022-09-01
+    endDate: 2023-12-30
+    highlights:
+      - 【*导航*】 基于Livox-Mid360雷达，和FAST_LIO算法，实现了机器人的定点巡航
+      - 【*仪表识别*】 基于PP-YOLOv2模型和Opencv，实现了对核电仪表的识别
+      - 【*仿真验证*】 在Webots中搭建仿真环境，验证导航算法在巡检场景下的稳定性
+
+  - name: "🔵基于STM32和WS2812的能量机关系统"
+    url: https://example.com/
+    affiliation: （个人项目,RoboMaster)
+    startDate: 2022-09-01
+    endDate: 2023-12-30
+    imgpath: "./img/1.png"
+    highlights:
+      - 【*硬件*】使用嘉立创EDA自制基于STM32F103RCT6的主控板，用于对WS2812灯珠的驱动和击打监测。在RoboMaster C型开发板上实现了其转速控制。
+      - 【*软件*】整体代码使用HAL库编写，通过DMA和PWM串行输入控制WS2812灯珠颜色，亮度，使用PID实现了其正弦转速
+  
+      # - 【*硬件*】自制带双移位寄存器74HC595D的引脚转换板，用于驱动LG7088GH点阵屏
+      # - 【*软件*】使用Verilog分模块编写了分频，按键，流水，蓝牙等模块，使用Modelsim进行了波形图的仿真，同时使用Vivado进行综合，下载到FPGA板上进行调试
+
+  - name: "FPGA驱动点阵屏"
+    url: https://example.com/
+    affiliation: (课程设计，个人项目)
+    startDate: 2023-09-01
+    endDate: 2023-12-30
+    highlights:
+      - 【*硬件*】自制带双移位寄存器的引脚转换板，用于驱动8*8点阵屏
+      - 【*软件*】使用Verilog分模块编写了分频，按键，流水，蓝牙等模块，进行了波形图的仿真，使用Vivado进行综合，下载到FPGA板上进行调试
+  
+
+  - name: "基于STM32和蓝牙的海洋水质监测系统"
+    url: https://example.com/
+    affiliation: (课程设计，个人项目)
+    startDate: 2024-01-01
+    endDate: present
+    imgpath: "./img/1.png"
+    highlights:
+      # - 【*系统简介*】 使用搭建基于STM32和蓝牙的海洋水质监测系统，实现对水质参数（如pH值、溶解氧、浊度等）的实时监测与数据上传。
+      - 【*硬件部分*】设计电路，集成最小系统、蓝牙、传感器和电池模块
+      - 【*软件开发*】 实现数据采集、处理和上传功能，并使用Meteor和React搭建APP和网页端，实现水质数据的显示、分析和导出。
+      # - 
+  # - name: "海洋水质监测系统"
+  #  url: https://example.com/
+  #  affiliation: (课程设计)
+  #  startDate: 2024-01-01
+  #  endDate: present
+  #  highlights:
+  #    - 【*系统设计与实现*】 使用STM32F103C8T6搭建基于蓝牙的海洋水质监测系统，实现对水质参数（如pH值、溶解氧、浊度等）的实时监测与数据上传。
+  #    - 【*硬件开发*】 利用嘉立创EDA设计并制作了定制主控板，集成最小系统、蓝牙、传感器和电池模块。
+  #    - 【*软件开发*】 实现数据采集、处理和上传功能，并使用Meteor和React搭建APP和网页端，实现水质数据的实时显示、分析。
+
+  # - name: "轮腿机器人腿部结构有限元分析及再设计"
+  #   url: https://example.com/
+  #   affiliation: 负责人
+  #   startDate: 2022-09-01
+  #   endDate: 2023-12-30
+  #   highlights:
+  #     - 【*有限元仿真*】使用SolidWorls和COMSOL对腿部结构在行走、转向、爬坡等多种工况下的受力情况进行了仿真，分析了结构在不同载荷下的应力分布、变形情况以及模态特性。
+  #     - 【*结构优化*】 根据仿真结果，识别出腿部结构的薄弱点和应力集中区域，通过改变结构形状进行了优化设计。
+  
+    #- name: "基于STM32和OpenMV的自动泊车系统"
+  #  url: https://example.com/
+  #  affiliation: (项目负责人，团队3人,电赛)
+  #  startDate: 2022-08-01
+  #  endDate: 2022-08-30
+  #  highlights:
+  #    - 基于Openmv的Micro-Python实现了色块识别，与下位机通信实现巡线 
+
+
+skills:
+  - category: 嵌入式【具备嵌入式软硬件设计调试能力】
+    skills:
+      - 嘉立创EDA
+      - Altium Designer
+      - Cubemx
+      - Keil
+      - Vivado
+      - Modelsim
+
+  - category: 软件开发【较为丰富的图像处理及相关项目开发经验】
+    skills:
+      - OpenCV
+      - CMake
+      - ROS2
+      - Webots
+      - Unity
+      - Meteor
+  - category: 编程语言【能够较为熟练运用多种编程语言】
+    skills:
+      - C/C++(熟悉)
+      - Python(熟悉)
+      - MATLAB(熟悉)
+      - LaTeX(熟悉)
+      - Typst(熟悉)
+      - NodeJs、JavaScript、Html、CSS(较为熟悉)
+      - C#(了解)
+      - R(了解)
+      - Verilog(了解)
+      # - Node.js
+  - category: 工具【熟练掌握办公、嵌入式、软件开发相关工具的使用，熟练Linux系统】
+    skills:
+      - Office 
+      - Zotero
+      - Adobe Photoshop、IDesign、Acrobat
+      - Docker
+      - Git
+      # - Jupyter Notebook
+      - WSL2
+      - VMware Workstation
+      - Vscode
+      - Clion
+      - SSH
+
+  - category: 其他
+    skills:
+      - 优秀的团队合作意识和管理能力 
+      - 能吃苦
+      - 有责任心
+      - 上进心强
+
+
+languages:
+
+
+interests:
+  - 图像处理
+  - 深度学习
+  - 导航
+  - 软件开发
+  - 嵌入式
+

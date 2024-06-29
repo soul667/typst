@@ -51,7 +51,7 @@
 #cvskills(cvdata)
 #cv获奖(cvdata)
 #cv获奖1(cvdata)
-#cvwork(cvdata)
+//#cvwork(cvdata)
 // #cvaffiliations(cvdata)
 #v(-9em)
 #cvprojects(cvdata)
