@@ -6,6 +6,7 @@
 // Originally contributed by Pol Dellaiera - https://github.com/drupol
   #import "@preview/showybox:2.0.1": showybox
 
+// #let colors_=()
 
 #let slide(
   self: none,
@@ -13,6 +14,7 @@
   subtitle: auto,
   header: auto,
   footer: auto,
+  now_light:auto,
   display-current-section: auto,
   ..args,
 ) = {
@@ -28,6 +30,9 @@
   if footer != auto {
     self.uni-footer = footer
   }
+    // if now_light != auto {
+    self.uni-now_light = now_light
+  // }
   if display-current-section != auto {
     self.uni-display-current-section = display-current-section
   }
@@ -219,16 +224,20 @@
 
 #let register(
   self: themes.default.register(),
+  // nowlight:now_light,
   aspect-ratio: "16-9",
   progress-bar: true,
   display-current-section: true,
-  footer-columns: (15%, 2fr, 25%),
-  footer-a: self => self.info.author,
-  footer-b: self => if self.info.short-title == auto { self.info.title } else { self.info.short-title },
+  footer-columns: (15%, 15%,15%,15%,15%,10%, 8%),
+  footer-a: "01基本信息",
+  footer-b: "02获得荣誉",
+  footer-d: "03竞赛获奖",
+  footer-e: "04项目经历",
+  footer-f: "05其他荣誉",
+  footer-g: "06规划",
+
+
   footer-c: self => {
-    h(1fr)
-    utils.info-date(self)
-    h(1fr)
     states.slide-counter.display() + " / " + states.last-slide-number
     h(1fr)
   },
@@ -253,18 +262,48 @@
   self.uni-display-current-section = display-current-section
   self.uni-title = none
   self.uni-subtitle = none
-  self.uni-footer = self => {
+  // self.now_light=now_light;
+  self.uni-footer = (self) => {
     let cell(fill: none, it) = rect(
       width: 100%, height: 100%, inset: 1mm, outset: 0mm, fill: fill, stroke: none,
       align(horizon, text(fill: white, it))
     )
     show: block.with(width: 100%, height: auto, fill: self.colors.secondary)
+    {
+      // 划分颜色数组
+    }
+      let colors_=()
+      // if(self)
+      let num11 = states.slide-counter;
+      // content to num;
+      // if num11==3 {
+      //   now_light=1;
+      // }
+      // if num11==5 or num11==6 {
+      //   now_light=1;
+      // }
+      self.now_light=1
+      for value in (0,1,2,3,4,5) {
+      if(value==0 or value==2 or value==4){
+      colors_.push(self.colors.secondary)
+      }
+      if(value==1 or value==3 or value==5){
+      colors_.push(self.colors.primary)
+      }
+
+      }
     grid(
       columns: footer-columns,
       rows: (1.5em, auto),
-      cell(fill: self.colors.primary, utils.call-or-display(self, footer-a)),
-      cell(fill: self.colors.secondary, utils.call-or-display(self, footer-b)),
-      cell(fill: self.colors.tertiary, utils.call-or-display(self, footer-c)),
+      cell(fill: colors_.at(0), utils.call-or-display(self,footer-a)),
+
+      // cell(fill: self.colors.primary, utils.call-or-display(self, footer-a)),
+      cell(fill: colors_.at(1), utils.call-or-display(self, footer-b)),
+      cell(fill: colors_.at(2), utils.call-or-display(self, footer-d)),
+      cell(fill: colors_.at(3), utils.call-or-display(self, footer-e)),
+      cell(fill: colors_.at(4), utils.call-or-display(self, footer-f)),
+            cell(fill: colors_.at(5), utils.call-or-display(self, footer-g)),
+      cell(fill: self.colors.secondary, utils.call-or-display(self, footer-c)),
     )
   }
   self.uni-header = self => {
@@ -500,6 +539,79 @@ align(left,[
     //   // #text( "学校专业:"+info.institution)
 
     // ])
+    ],
+)
+// v(-0.5em)
+
+}
+
+#let 分类(标题文字,list_,percent,bool)={
+let data_=[];
+let box_bssic(data1)=[
+  #showybox(
+  // height: 0.5em,
+  frame: (
+    border-color: rgb("#19448e").darken(80%),
+    title-color:rgb("#19448e").lighten(90%),
+    // body-color: rgb("#19448e").lighten(80%)
+        dash: "dashed",
+  ),
+  title-style: (
+    color: black,
+    weight: "regular",
+    align: center
+  ),
+    shadow: (
+    offset: 3pt,
+  ),
+  [
+    // #v(-0.3em)
+    // #align(center,data1)
+#align(center,[
+     #text(size: 0.6em, strong(data1))
+])
+  ]
+  )
+    #v(-0.6em)
+
+]
+for x in list_{
+  if(bool==1){
+  data_+=box_bssic(x);
+  }
+}
+if(bool==0)   {
+  data_+=box_bssic(list_);
+}
+  data_+=v(0.8em);
+  showybox(
+  width:percent,
+  frame: (
+    border-color: rgb("#19448e").darken(0%),
+    title-color:rgb("#19448e").darken(0%),
+    body-color: rgb("#19448e").lighten(100%),
+        dash: "dashed",
+  ),
+  title-style: (
+    // color: black,
+    weight: "regular",
+    align: center,
+    boxed-style: (:),
+    // background: 
+//  title-style: (),
+
+  ),
+  shadow: (
+    offset: 3pt,
+  ),
+  title: [
+     #text(size: 0.8em, strong(标题文字))
+  ]
+  ,[
+    #align(center,
+    [
+        #data_
+    ])
     ],
 )
 // v(-0.5em)

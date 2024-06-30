@@ -19,11 +19,15 @@
 #let themeColor=rgb("#19448e")
 #let (slide, title-slide, focus-slide, matrix-slide) = utils.slides(s)
 #show: slides
+#slide(header:"目录 CONTENTS")[
+  == Table of contents
 
+  #touying-outline()
+]
 // #heading(level: 1,[课题研究])
 = 1 基本信息
 
-#slide(header:"01 基本信息")[
+#slide(header:"01 基本信息",now_light:"0")[
   // == 1111222222
 // 11
 #place(left,dy:0.7em,dx:2em,[
@@ -181,21 +185,100 @@
 ]
 
 = 4 科研/项目经历
+#slide(header:"4.0 概览")[
+#grid(
+  columns: (auto,auto,auto),
+  rows: (auto),
+  gutter: 3pt,
+  [
+    #university.分类("①视觉算法",("能量机关自动瞄准系统","装甲板自动瞄准系统","轮腿机器人仪表监测和导航"),8em,1)
+  ],[
+    #university.分类("②嵌入式",("能量机关嵌入式部分","海洋水质监测系统嵌入式部分"),8em,1)
+  ],
+  [
+    #university.分类("③软件/其他",("海洋水质监测系统后台系统"),8em,0)
+  ]
+  )
+
+]
+  #import "@preview/showybox:2.0.1": showybox
+
+#import "@preview/tablex:0.0.8": tablex, rowspanx, colspanx
+
+
 #slide(header:"4.1 RoboMaster-自动瞄准系统")[
-11
+// #v(-1em)
+#place(right+bottom,dx:1.6em,dy:-1.1em,[
+  #tablex(
+  columns: 2,
+  align: left + horizon,
+  auto-vlines: false,
+  header-rows: 2,
+  [*参数*], [*值*],
+  [*工作距离*], [1-10m],
+  // [稳定工作], [超],
+  [*帧率*],[约230fps],
+  [*语言*],[C++],
+  [*代码量*],[约2700行],
+)
+])
+// #h(5em)
+#place(left,dx:-1.2em,[
+#image("./img/自瞄系统示意图-修正.drawio.svg",width: 31em)
+
+])
 ]
 #slide(header:"4.2 RoboMaster-能量机关击打系统")[
-11
+#image("./img/能量机关击打系统.drawio.svg",width: 27em)
+#place(right+bottom,dx:0.6em,dy:-0.8em,[
+  #tablex(
+  columns: 2,
+  align: left + horizon,
+  auto-vlines: false,
+  header-rows: 2,
+  [*参数*], [*值*],
+
+  // [稳定工作], [超],
+   [*工作距离*], [8-10m],
+   [*帧率*],[约120fps],
+  [*语言*],[C++],
+  [*代码量*],[约1900行],
+)
+])
 ]
 #slide(header:"4.3 RoboMaster-能量机关系统（嵌入式部分）")[
-11
+// 11
+#image("./img/能量机关嵌入式部分.drawio.svg",width: 27em)
+#place(right+bottom,dx:0.6em,dy:-2.8em,[
+  #tablex(
+  columns: 2,
+  align: left + horizon,
+  auto-vlines: false,
+  header-rows: 2,
+  [*参数*], [*值*],
+
+  // [稳定工作], [超],
+   [*语言*], [C],
+   [*使用库*],[HAL库],
+  // [*语言*],[C++],
+  [*代码量*],[约900行],
+  [*EDA*],[嘉立创],
+
+)
+])
 ]
 #slide(header:"4.4 面向核电领域高性能智能检测轮腿机器人")[
-11
+#image("./img/挑战杯项目.drawio.svg",width: 27em)
+
+]
+
+#slide(header:"4.5 海洋水质监测系统-电控+机械(课程设计)")[
+#image("./img/海洋水质监测系统-嵌入式.drawio.svg",width: 28em)
+
 ]
 
 #slide(header:"4.5 海洋水质监测系统-后台（课程设计）")[
-11
+#image("./img/海洋水质监测系统-后台系统.drawio.svg",width: 30em)
 ]
 
 = 5 其他影响
@@ -209,7 +292,7 @@
   //     // #university.竞赛表_名称("全国大学生数学建模竞赛","二等奖")
   //   ]
   // )
-#place(left,dy:0.7em,dx:-1em,  university.竞赛获奖("11",文字25,"./img/黑龙江省新闻联播2.png",15.2em,55%))
+#place(left,dy:0.7em,dx:-1em,  university.竞赛获奖("11",文字25,"./img/黑龙江省新闻联播1.png",15.2em,55%))
 #place(left,dy:0.7em,dx:17em,  university.竞赛获奖("11",
 [
   #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "学校官方公众号报道")
@@ -217,4 +300,4 @@
 ],"./img/官号报道1.png",11.2em,44%))
 
 ]
-= 05 研究生规划
+// = 05 研究生规划
