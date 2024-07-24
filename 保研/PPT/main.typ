@@ -21,8 +21,15 @@
 #show: slides
 #slide(header:"目录 CONTENTS")[
   == Table of contents
+  // #set text(size: 1.2em)
++ 基本信息
++ 获得荣誉
++ 竞赛获奖
++ 科研/项目经历
++ 其他影响
+  // #set text(size: 1em)
 
-  #touying-outline()
+  // #touying-outline()
 ]
 // #heading(level: 1,[课题研究])
 = 1 基本信息
@@ -136,7 +143,7 @@
 #place(left,dy:0.7em,dx:17em, university.竞赛获奖("11",文字23,"./img/先进个人.jpg",7.9em,42%))
 // #place(left,dy:0.7em,dx:19em,  university.竞赛获奖("11",文字2_,"./img/RoboMaster全国赛获奖证书.jpg",7.2em,38%))
 ] 
-= 3 竞赛获奖 
+= 3 竞赛获奖
 #let 文字2=[
   // 第十八届挑战杯特等奖
     #text(size: 0.8em, fill: black, weight: "bold", "第十八届挑战杯全国")
@@ -159,7 +166,7 @@
   #text(size: 1.3em, fill: rgb("#19448e"), weight: "bold", "竞赛经历及任职")
 ]
 #let 文字专利=[
-  #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "第一作者发表发明专利两项")
+  #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "第一作者发表发明专利一项")
   #text(size: 0.3em, "（未授权）")
 
 ]
@@ -168,38 +175,55 @@
   // #text(size: 0.3em, "（未授权）")
 
 ]
-#slide(header:"3 竞赛获奖 比赛任职经历")[
-#place(left,dy:0.7em,dx:4.7em,  university.竞赛获奖("11",文字24,"./img/竞赛经历v1.0.drawio.svg",17.2em,65%))
+#slide(header:"3.1 比赛任职经历")[
+#place(left,dy:0.7em,dx:1.7em,  university.竞赛获奖("11",文字24,"./img/竞赛经历v1.0.drawio.svg",17.2em,65%))
+#place(left,dy:2.1em,dx:23.7em,  image("img/创梦之翼介绍.drawio.svg",width: 6em))
 
 ]
-#slide(header:"3 竞赛获奖 获得国家级特等奖一项，二等奖一项")[
+#slide(header:"3.1 比赛任职经历")[
+#place(left,dy:0.5em,dx:-1.2em,  university.竞赛获奖("11",[
+    #text(size: 0.6em, fill: rgb("#19448e"), weight: "bold", "RoboMaster 2024 区域赛合照（武汉）")
+],"./img/武汉参赛照片.jpg",14.2em,51%))
+// #place(left,dy:2.1em,dx:23.7em,  image("img/创梦之翼介绍.drawio.svg",width: 6em))
+#place(left,dy:0.5em,dx:15.2em,  university.竞赛获奖("11",[
+    #text(size: 0.6em, fill: rgb("#19448e"), weight: "bold", "第十八届挑战杯合照（贵州）")
+],"./img/挑战杯合照.jpg",14.2em,51%))
+
+]
+#slide(header:"3.2  获得国家级特等奖一项，二等奖一项")[
 #place(left,dy:0.7em,dx:2em, university.竞赛获奖("11",文字2,"./img/面向核电领域高性能智能检测获奖证书.png",15em,51%))
 #place(left,dy:0.7em,dx:19em,  university.竞赛获奖("11",文字2_,"./img/RoboMaster全国赛获奖证书.jpg",7.2em,38%))
 ]
-#slide(header:"3 竞赛获奖 省奖2 项,第一作者发表发明专利两项.")[
+#slide(header:"3.3  省奖2 项,第一作者发表发明专利一项.")[
 // #place(left,dy:0.7em,dx:2em, university.竞赛获奖("11",文字2,"./img/面向核电领域高性能智能检测获奖证书.png",15em,51%))
 #place(left,dy:0.7em,dx:-1em,  university.竞赛获奖("11",文字21,"./img/RoboMaster区域赛获奖证书.jpg",7.2em,35%))
-#place(left,dy:0.7em,dx:11em,  university.专利_两个图片("11",文字专利,"./img/一种轮足式机器人腿部结构-受通.jpg","./img/一种轮足切换式机器人-受通.jpg",0em,7.5em,65%))
+#place(left,dy:0.7em,dx:12em,  university.竞赛获奖("11",文字专利,"./img/一种轮足式机器人腿部结构-受通.jpg",7.2em,45%))
+
+
+// #place(left,dy:0.7em,dx:11em,  university.专利_两个图片("11",文字专利,"./img/一种轮足式机器人腿部结构-受通.jpg","./img/一种轮足切换式机器人-受通.jpg",0em,7.5em,65%))
 
 // #place(left,dy:0.7em,dx:11em,  university.竞赛获奖("11",文字24,"./img/竞赛经历v1.0.drawio.svg",17.2em,65%))
 ]
 
 = 4 科研/项目经历
 #slide(header:"4.0 概览")[
-#grid(
-  columns: (auto,auto,auto),
-  rows: (auto),
-  gutter: 3pt,
-  [
-    #university.分类("①视觉算法",("能量机关自动瞄准系统","装甲板自动瞄准系统","轮腿机器人仪表监测和导航"),8em,1)
-  ],[
-    #university.分类("②嵌入式",("能量机关嵌入式部分","海洋水质监测系统嵌入式部分"),8em,1)
-  ],
-  [
-    #university.分类("③软件/其他",("海洋水质监测系统后台系统"),8em,0)
-  ]
-  )
+// #grid(
+//   columns: (auto,auto,auto),
+//   rows: (auto),
+//   gutter: 3pt,
+//   [
+//     #university.分类("①视觉算法",("能量机关自动瞄准系统","装甲板自动瞄准系统","轮腿机器人仪表监测和导航"),8em,1)
+//   ],[
+//     #university.分类("②嵌入式",("能量机关嵌入式部分","海洋水质监测系统嵌入式部分"),8em,1)
+//   ],
+//   [
+//     #university.分类("③软件/其他",("海洋水质监测系统后台系统"),8em,0)
+//   ]
+//   )
+#place(left,dx:2.8em,dy:0.4em,[
+#image("./img/项目概述.drawio.svg",width: 23em)
 
+])
 ]
   #import "@preview/showybox:2.0.1": showybox
 
@@ -228,6 +252,25 @@
 
 ])
 ]
+#slide(header:"4.1 RoboMaster-自动瞄准系统-展示")[
+// #v(-1em)
+
+// #h(5em)
+#place(left,dx:-1.2em,dy:1.3em,[
+// #image("./img/自瞄视频1.png",width: 15em)
+ #university.竞赛获奖("11",[
+  #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "自瞄系统场上效果")
+ ],"./img/白色.png",14.9em,54%)
+
+])
+#place(left,dx:15em,dy:1.3em,[
+// #image("./img/自瞄视频1.png",width: 15em)
+ #university.竞赛获奖("11",[
+  #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "自瞄系统仿真测试")
+ ],"./img/白色.png",14.9em,54%)
+
+])
+]
 #slide(header:"4.2 RoboMaster-能量机关击打系统")[
 #image("./img/能量机关击打系统.drawio.svg",width: 27em)
 #place(right+bottom,dx:0.6em,dy:-0.8em,[
@@ -246,6 +289,26 @@
 )
 ])
 ]
+
+#slide(header:"4.2 RoboMaster-能量机关击打系统-展示")[
+// #v(-1em)
+
+// #h(5em)
+#place(left,dx:-1.2em,dy:1.3em,[
+// #image("./img/自瞄视频1.png",width: 15em)
+ #university.竞赛获奖("11",[
+  #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "能量机关击打测试")
+ ],"./img/白色.png",14.9em,54%)
+
+])
+#place(left,dx:15em,dy:1.3em,[
+// #image("./img/自瞄视频1.png",width: 15em)
+ #university.竞赛获奖("11",[
+  #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "算法效果展示")
+ ],"./img/白色.png",14.9em,54%)
+
+])
+]
 #slide(header:"4.3 RoboMaster-能量机关系统（嵌入式部分）")[
 // 11
 #image("./img/能量机关嵌入式部分.drawio.svg",width: 27em)
@@ -261,14 +324,14 @@
    [*语言*], [C],
    [*使用库*],[HAL库],
   // [*语言*],[C++],
-  [*代码量*],[约900行],
+  [*代码量*],[约1100行],
   [*EDA*],[嘉立创],
 
 )
 ])
 ]
 #slide(header:"4.4 面向核电领域高性能智能检测轮腿机器人")[
-#image("./img/挑战杯项目.drawio.svg",width: 27em)
+#image("./img/挑战杯项目.drawio.svg",width: 30em)
 
 ]
 
@@ -277,7 +340,7 @@
 
 ]
 
-#slide(header:"4.5 海洋水质监测系统-后台（课程设计）")[
+#slide(header:"4.6 海洋水质监测系统-后台（课程设计）")[
 #image("./img/海洋水质监测系统-后台系统.drawio.svg",width: 30em)
 ]
 
@@ -292,7 +355,7 @@
   //     // #university.竞赛表_名称("全国大学生数学建模竞赛","二等奖")
   //   ]
   // )
-#place(left,dy:0.7em,dx:-1em,  university.竞赛获奖("11",文字25,"./img/黑龙江省新闻联播1.png",15.2em,55%))
+#place(left,dy:0.7em,dx:-1em,  university.竞赛获奖("11",文字25,"./img/黑龙江省新闻联播2.png",15.2em,55%))
 #place(left,dy:0.7em,dx:17em,  university.竞赛获奖("11",
 [
   #text(size: 0.7em, fill: rgb("#19448e"), weight: "bold", "学校官方公众号报道")
