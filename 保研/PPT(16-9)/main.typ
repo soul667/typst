@@ -32,9 +32,9 @@
   // #touying-outline()
 ]
 // #heading(level: 1,[课题研究])
-= 1 基本信息
+= 1 基本介绍
 
-#slide(header:"01 基本信息",now_light:"0")[
+#slide(header:"1.1 基本信息",now_light:"0")[
   // == 1111222222
 // 11
 #place(left,dy:0.7em,dx:2em,[
@@ -102,7 +102,7 @@
 
 ])
 ]
-= 2获得荣誉
+// = 2获得荣誉
 #let 文字22=[
   // 第十八届挑战杯特等奖
     // #text(size: 0.8em, fill: black, weight: "bold",
@@ -117,28 +117,28 @@
   #text(size: 0.6em, fill: rgb("#19448e"), weight: "bold", "2023-2024年度学生创新创业先进个人")
     //  #text(size: 0.8em, fill: black, "(2/7)")
 ]
-#slide(header:"2 获得荣誉")[
+// #slide(header:"2 获得荣誉")[
 
-  // #university.basic_info("物理与光电工程学院院长特别奖学金","本硕博同评、本科仅一")
+//   // #university.basic_info("物理与光电工程学院院长特别奖学金","本硕博同评、本科仅一")
 
-  //   #university.basic_info("校优秀奖学金","多次")
+//   //   #university.basic_info("校优秀奖学金","多次")
 
-// #university.big_small1("物理与光电工程学院院长特别奖学金","本硕博同评、本科仅一",25pt,15pt)
+// // #university.big_small1("物理与光电工程学院院长特别奖学金","本硕博同评、本科仅一",25pt,15pt)
 
-// #university.big_small1("2023-2024年度“五四”评比表彰“学生创新创业先进个人","表彰在学校创新创业工作中做出突出贡献的学生",25pt,15pt)
-#v(1em)
-#align(
-  center,
-  [
-    #university.荣誉表_名称("物理与光电工程学院院长特别奖学金","本硕博同评、本科仅一")
+// // #university.big_small1("2023-2024年度“五四”评比表彰“学生创新创业先进个人","表彰在学校创新创业工作中做出突出贡献的学生",25pt,15pt)
+// #v(1em)
+// #align(
+//   center,
+//   [
+//     #university.荣誉表_名称("物理与光电工程学院院长特别奖学金","本硕博同评、本科仅一")
+// // #university.荣誉表_名称("校优秀奖学金","多次")
+// #university.荣誉表_名称("2023-2024年度“五四”评比表彰“学生创新创业先进个人","表彰在学校创新创业工作中做出突出贡献的学生")
+
 // #university.荣誉表_名称("校优秀奖学金","多次")
-#university.荣誉表_名称("2023-2024年度“五四”评比表彰“学生创新创业先进个人","表彰在学校创新创业工作中做出突出贡献的学生")
-
-#university.荣誉表_名称("校优秀奖学金","多次")
-  ]
-)
-]
-#slide(header:"2 获得荣誉")[
+//   ]
+// )
+// ]
+#slide(header:"1.2 获得荣誉")[
 #place(left,dy:0.7em,dx:2em, university.竞赛获奖("11",文字22,"./img/院长特别奖学金.jpg",7.9em,42%))
 #place(left,dy:0.7em,dx:17em, university.竞赛获奖("11",文字23,"./img/先进个人.jpg",7.9em,42%))
 // #place(left,dy:0.7em,dx:19em,  university.竞赛获奖("11",文字2_,"./img/RoboMaster全国赛获奖证书.jpg",7.2em,38%))
@@ -177,7 +177,7 @@
 ]
 #slide(header:"3.1 比赛任职经历")[
 #place(left,dy:0.7em,dx:1.7em,  university.竞赛获奖("11",文字24,"./img/竞赛经历v1.0.drawio.svg",17.2em,65%))
-#place(left,dy:2.1em,dx:23.7em,  image("img/创梦之翼介绍.drawio.svg",width: 6em))
+#place(left,dy:2.5em,dx:22.2em,  image("img/创梦之翼介绍.drawio.svg",width: 8em))
 
 ]
 #slide(header:"3.1 比赛任职经历")[
